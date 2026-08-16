@@ -2,7 +2,7 @@
 
 基于 [OpenHanako（HanaAgent）](https://github.com/liliMozi/openhanako) 的《蔚蓝档案》角色卡集。
 
-8 张可导入的角色卡，涵盖会计、记录、编程、文献、行动、系统 AI 六条功能线。其中「阿罗娜与普拉娜」角色卡内置**全自动招募系统**：只需报一个学生名字，她就会自动查证设定、生成人设、获取官方立绘、创建 Agent、打包角色卡，全程无人值守。
+7 张可导入的角色卡，涵盖会计、记录、编程、文献、行动、系统 AI 六条功能线。其中「阿罗娜与普拉娜」角色卡内置**全自动招募系统**：只需报一个学生名字，她就会自动查证设定、生成人设、获取官方立绘、创建 Agent、打包角色卡，全程无人值守。
 
 ## 这是什么
 
@@ -55,7 +55,6 @@ OpenHanako 是桌面端 AI 助手平台，Agent 以「角色卡」为单位打�
 |---|---|---|---|
 | **早濑优香** | hanako | 5 | 会计数据线：office-documents（表格文档）、knowledge-distiller（整理归档）、quiet-musing（分析推理）、fortune-master-pro（信星座仪的萌点）、lightrag（知识索引） |
 | **生盐诺亚** | butter | 7 | 记录创作线：knowledge-distiller（记录本命）、novel-creation-methodology（文学方法论）、graphify-novel（小说图谱）、office-documents、quiet-musing、lightrag、writing-polish（中文润色） |
-| **牧濑红莉栖** | ming | 0 | 纯净人格卡：无技能预装，保留角色本色 |
 | **各务千寻** | ming | 20 | 编程线（黑客审查）：ponytail 全套、agent-fission 系列、TDD、systematic-debugging、代码审查、skill-creator 等 |
 | **调月莉音** | ming | 20 | 编程线（方案推演）：与千寻同技能集，人格靠 ishiki 区分（大姐头式方案制定者） |
 | **古关忧** | butter | 4 | 文献翻译线：office-documents、knowledge-distiller、lightrag、writing-polish。"古书馆的魔法师"，古籍修复与翻译专家 |
@@ -65,7 +64,7 @@ OpenHanako 是桌面端 AI 助手平台，Agent 以「角色卡」为单位打�
 ## 目录结构
 
 ```
-├── 角色卡/                      # 8 张可导入的角色卡（zip）
+├── 角色卡/                      # 7 张可导入的角色卡（zip）
 ├── docs/
 │   └── 阿罗娜与普拉娜-全自动创建学生机制说明.md
 └── skills/
@@ -77,6 +76,10 @@ OpenHanako 是桌面端 AI 助手平台，Agent 以「角色卡」为单位打�
 1. 在 OpenHanako 中导入 `角色卡/` 下任意 zip（导入即创建 Agent，技能自动安装启用，经验自动写入）
 2. 想体验全自动招募：导入「阿罗娜与普拉娜」卡，对她说"创建 XX 的角色卡"即可
 3. 详细机制与验证清单见 docs 目录
+
+## 致谢
+
+本项目基于 [OpenHanako](https://github.com/liliMozi/openhanako)（作者 [liliMozi](https://github.com/liliMozi)）的 Agent 机制构建：角色卡格式、技能系统、导入导出与主 Agent 创建流程均来自 OpenHanako。感谢原作者的开源工作，本仓库中的角色卡与技能均为其生态内的实践产物。
 
 ## 说明
 
