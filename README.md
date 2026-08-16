@@ -81,6 +81,12 @@ OpenHanako 是桌面端 AI 助手平台，Agent 以「角色卡」为单位打�
 
 本项目基于 [OpenHanako](https://github.com/liliMozi/openhanako)（作者 [liliMozi](https://github.com/liliMozi)）的 Agent 机制构建：角色卡格式、技能系统、导入导出与主 Agent 创建流程均来自 OpenHanako。感谢原作者的开源工作，本仓库中的角色卡与技能均为其生态内的实践产物。
 
+## 开源协议与版权
+
+本仓库代码（含 skills/ 下的技能、文档）以 **Apache License 2.0** 授权，与上游 OpenHanako 一致，详见 [LICENSE](LICENSE)。
+
+《蔚蓝档案》角色设定、名称与立绘版权归 **NEXON Games / Yostar** 所有，角色卡仅以收藏格式呈现，不在 Apache 2.0 授权范围内。引用角色素材时请遵守原版权方条款。
+
 ## 说明
 
 - 角色设定与立绘版权归 NEXON Games / Yostar 所有，本仓库仅以角色卡格式收藏，用于 OpenHanako 平台的个人使用
