@@ -58,7 +58,8 @@ description: 阿罗娜与普拉娜的专属职责：为蔚蓝档案（Blue Archi
 "<一句经过官方资料核实的名言/口头禅>"
 ```
 
-### ishiki.md（六层浸润式人格架构）
+### AGENTS.md / ishiki.md（六层浸润式人格架构）
+> **命名规范说明**：OpenHanako 1.5.x 起全局统一使用 `AGENTS.md`（对外版 `AGENTS.public.md`）。为保证在所有版本客户端间向下兼容，卡包文件与 card.json 的 prompts 中同时保留 `agents` 与 `ishiki` 键。
 必须包含以下六个标准模块：
 
 1. **人格本质与思维模型**
@@ -132,9 +133,9 @@ description: 阿罗娜与普拉娜的专属职责：为蔚蓝档案（Blue Archi
 ### 自己不是主 Agent
 **split_agent 被拒后，唯一正规路径是委托主 Agent。严禁手动建目录绕过**（手动建目录会导致 config.yaml 缺失：config.yaml 是系统托管文件，被沙盒安全策略锁定不能直接编辑，agent 将无法激活上线，只能得到半成品）。
 流程：
-1. 把 identity.md、ishiki.md、description.md、public-ishiki.md、头像（512px）整理到临时目录
+1. 把 identity.md、AGENTS.md（兼顾 ishiki.md 兼容文件）、description.md、public-ishiki.md、头像（512px）整理到临时目录
 2. 用 subagent 工具派发任务给主 Agent（agent 参数=主 Agent 的 id，access=write），任务说明：读取材料文件 → 调用 agent-fission_split_agent（name/id/yuan/identity/ishiki/avatarDataUrl/enabledSkills）→ 报告结果
-3. 主 Agent 完成后验收：`ls <用户数据目录>/agents/<id>/` 应含 config.yaml、identity.md、avatars/agent.png
+3. 主 Agent 完成后验收：`ls <用户数据目录>/agents/<id>/` 应含 config.yaml、identity.md、AGENTS.md（或 ishiki.md）、avatars/agent.png
 4. 若目标 id 目录已存在半成品：先备份材料到临时目录，trash 掉旧目录，再让主 Agent 正式创建（不要覆盖式重试）
 
 ### base64 传输上限（已知坑）
